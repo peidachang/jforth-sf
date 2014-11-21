@@ -55,7 +55,7 @@ public class TcpServer {
                 }
             }
         }while(!binded);
-        logger.info("started successfully in ip:"+this.accessIp+" port:"+this.accessPort);
+        logger.info("started successfully in ip:" + this.accessIp + " port:" + this.accessPort);
     }
 
     public void stop(){
@@ -65,4 +65,11 @@ public class TcpServer {
         }
     }
 
+    public void setAccessIp(String accessIp) {
+        this.accessIp = accessIp;
+    }
+
+    public void setAccessPort(int accessPort) {
+        this.accessPort = accessPort;
+    }
 }
